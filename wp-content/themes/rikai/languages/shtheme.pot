@@ -1,0 +1,1127 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Univn\n"
+"POT-Creation-Date: 2022-01-24 10:42+0700\n"
+"PO-Revision-Date: 2018-01-18 17:08+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;"
+"__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:23
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:27
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links below or "
+"a search?"
+msgstr ""
+
+#: admin/function.php:82 admin/options.php:1232
+msgid "Messenger"
+msgstr ""
+
+#: admin/function.php:83
+msgid "Contact us on Messenger"
+msgstr ""
+
+#: admin/function.php:93 inc/widgets/wg-support.php:141
+msgid "Zalo"
+msgstr ""
+
+#: admin/function.php:94
+msgid "Contact us on Zalo"
+msgstr ""
+
+#: admin/function.php:105 admin/function.php:113 admin/options.php:1123
+#: inc/widgets/wg-support.php:117
+msgid "Phone"
+msgstr ""
+
+#: admin/function.php:106 admin/function.php:114
+msgid "Contact us with phone"
+msgstr ""
+
+#: admin/function.php:125
+msgid "Map"
+msgstr ""
+
+#: admin/function.php:126
+msgid "Find on Google map"
+msgstr ""
+
+#: admin/function.php:134
+msgid "Please call us at this number"
+msgstr ""
+
+#: admin/function.php:136
+msgid "Or enter your phone number and we call you back soon"
+msgstr ""
+
+#: admin/function.php:144
+msgid "Contact us"
+msgstr ""
+
+#: admin/function.php:238
+msgid "Top Header"
+msgstr ""
+
+#: admin/function.php:240
+msgid "Top Header widget area"
+msgstr ""
+
+#: admin/function.php:254
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#: admin/function.php:256
+#, php-format
+msgid "Footer %d widget area"
+msgstr ""
+
+#: admin/function.php:268
+msgid "Sidebar"
+msgstr ""
+
+#: admin/function.php:270 inc/woocommerce/function-woo.php:14
+msgid "Add widgets here."
+msgstr ""
+
+#: admin/function.php:322
+msgid "Quản trị viên"
+msgstr ""
+
+#: admin/options.php:355
+msgid "Footer"
+msgstr ""
+
+#: admin/options.php:371
+msgid "Enter number column footer"
+msgstr ""
+
+#: admin/options.php:391
+msgid "Copyright"
+msgstr ""
+
+#: admin/options.php:434
+msgid "Category Settings"
+msgstr ""
+
+#: admin/options.php:441
+msgid "Category post"
+msgstr ""
+
+#: admin/options.php:457 admin/options.php:858
+msgid "Display hierarchy category"
+msgstr ""
+
+#: admin/options.php:476
+msgid "Select style"
+msgstr ""
+
+#: admin/options.php:498
+msgid "Category layout"
+msgstr ""
+
+#: admin/options.php:523
+msgid "Enable Posts Thumb"
+msgstr ""
+
+#: admin/options.php:542
+msgid "Enable Posts Category"
+msgstr ""
+
+#: admin/options.php:561
+msgid "Enable Posts Meta"
+msgstr ""
+
+#: admin/options.php:580
+msgid "Enable Posts Description"
+msgstr ""
+
+#: admin/options.php:599
+msgid "Enable Posts Permalink"
+msgstr ""
+
+#: admin/options.php:621
+msgid "Single post"
+msgstr ""
+
+#: admin/options.php:637
+msgid "Display time and view post"
+msgstr ""
+
+#: admin/options.php:656
+msgid "Display buttons share social"
+msgstr ""
+
+#: admin/options.php:675
+msgid "Display post navigation"
+msgstr ""
+
+#: admin/options.php:694
+msgid "Display related post"
+msgstr ""
+
+#: admin/options.php:713
+msgid "Enter number post"
+msgstr ""
+
+#: admin/options.php:765
+msgid "Woocommerce Settings"
+msgstr ""
+
+#: admin/options.php:769
+msgid "Main Settings"
+msgstr ""
+
+#: admin/options.php:785
+msgid "Enable Shop Sidebar"
+msgstr ""
+
+#: admin/options.php:804
+msgid "Enable Hover Flip Image Of Product"
+msgstr ""
+
+#: admin/options.php:823 inc/woocommerce/function-woo.php:528
+#: inc/woocommerce/function-woo.php:556
+msgid "Cart"
+msgstr ""
+
+#: admin/options.php:842
+msgid "Category Product"
+msgstr ""
+
+#: admin/options.php:877
+msgid "Enter number product per page"
+msgstr ""
+
+#: admin/options.php:897
+msgid "Enter number product per row"
+msgstr ""
+
+#: admin/options.php:917
+msgid "Single Product"
+msgstr ""
+
+#: admin/options.php:933
+msgid "Choose style of slider gallery product"
+msgstr ""
+
+#: admin/options.php:945
+msgid "Horizontal"
+msgstr ""
+
+#: admin/options.php:946
+msgid "Vertical"
+msgstr ""
+
+#: admin/options.php:955
+msgid "Enter the number of product images in the view"
+msgstr ""
+
+#: admin/options.php:975
+msgid "Enable Zoom"
+msgstr ""
+
+#: admin/options.php:994
+msgid "Enable Lightbox"
+msgstr ""
+
+#: admin/options.php:1013
+msgid "Enable autoplay for gallery"
+msgstr ""
+
+#: admin/options.php:1032
+msgid "Display related products"
+msgstr ""
+
+#: admin/options.php:1051
+msgid "Enter number related productv"
+msgstr ""
+
+#: admin/options.php:1103
+msgid "Contact Settings"
+msgstr ""
+
+#: admin/options.php:1107
+msgid "Information contact"
+msgstr ""
+
+#: admin/options.php:1142 comments.php:64 inc/widgets/wg-information.php:48
+#: inc/widgets/wg-information.php:105 inc/widgets/wg-support.php:94
+#: inc/widgets/wg-support.php:125 inc/widgets/wg-support.php:248
+#: woocommerce/single-product-reviews.php:159
+msgid "Email"
+msgstr ""
+
+#: admin/options.php:1160 inc/widgets/wg-information.php:36
+#: inc/widgets/wg-information.php:89
+msgid "Address"
+msgstr ""
+
+#: admin/options.php:1179
+msgid "Google Map"
+msgstr ""
+
+#: admin/options.php:1197
+msgid "Social"
+msgstr ""
+
+#: admin/options.php:1213
+msgid "Facebook"
+msgstr ""
+
+#: admin/options.php:1251
+msgid "Instagram"
+msgstr ""
+
+#: admin/options.php:1270
+msgid "Tiktok"
+msgstr ""
+
+#: admin/options.php:1289
+msgid "Twitter"
+msgstr ""
+
+#: admin/options.php:1336 admin/options.php:1352
+msgid "Restrict user"
+msgstr ""
+
+#: admin/options.php:1371
+msgid "Hidden information"
+msgstr ""
+
+#: admin/options.php:1374
+msgid "Hidden information dashboard & login page"
+msgstr ""
+
+#: admin/options.php:1390
+msgid "Insert code"
+msgstr ""
+
+#: admin/options.php:1406
+msgid "Insert header"
+msgstr ""
+
+#: admin/options.php:1409
+msgid ""
+"Add custom scripts inside HEAD tag. You need to have a SCRIPT tag around scripts."
+msgstr ""
+
+#: admin/options.php:1425
+msgid "Insert body"
+msgstr ""
+
+#: admin/options.php:1428
+msgid ""
+"Add custom scripts just after the BODY tag opened. You need to have a SCRIPT tag "
+"around scripts."
+msgstr ""
+
+#: admin/options.php:1444
+msgid "Insert footer"
+msgstr ""
+
+#: admin/options.php:1447
+msgid ""
+"Add custom scripts you might want to be loaded in the footer of your website. You "
+"need to have a SCRIPT tag around scripts."
+msgstr ""
+
+#: archive.php:54
+msgid "The content is being updated"
+msgstr ""
+
+#: comments.php:14
+#, php-format
+msgctxt ""
+msgid "1 comment"
+msgid_plural "%1$s comment"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:19
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:27
+msgid "&larr; previous"
+msgstr ""
+
+#: comments.php:28
+msgid "Next &rarr;"
+msgstr ""
+
+#: comments.php:42 comments.php:47
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:43
+msgid "You must be"
+msgstr ""
+
+#: comments.php:43
+msgid "logged in"
+msgstr ""
+
+#: comments.php:43
+msgid "to post a comment."
+msgstr ""
+
+#: comments.php:50
+msgid "Comment with the name:"
+msgstr ""
+
+#: comments.php:53
+msgid "Add a comment..."
+msgstr ""
+
+#: comments.php:59 inc/widgets/wg-support.php:110
+#: woocommerce/single-product-reviews.php:153
+msgid "Name"
+msgstr ""
+
+#: comments.php:70
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: comments.php:73
+msgid "Post comment"
+msgstr ""
+
+#: footer.php:36
+msgid "Website design"
+msgstr ""
+
+#: footer.php:36
+msgid "by"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: footer.php:36
+msgid "Uni Creation"
+msgstr ""
+
+#: functions.php:37
+msgid "Primary"
+msgstr ""
+
+#: functions.php:38
+msgid "Menu Mobile"
+msgstr ""
+
+#: inc/shortcode/shortcode-blog.php:31 inc/shortcode/shortcode-blog.php:419
+#: inc/widgets/wg-post-list.php:59 template-parts/portfolio/portfolio-child.php:138
+#: template-parts/portfolio/portfolio-loadmore.php:139
+msgid "Read more"
+msgstr ""
+
+#: inc/template-functions/breadcrumbs.php:22
+msgid "Search for keyword"
+msgstr ""
+
+#: inc/template-functions/breadcrumbs.php:24
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/template-functions/breadcrumbs.php:28
+msgid "Products"
+msgstr ""
+
+#: inc/template-functions/init.php:246
+msgid "Unauthorized access is denied!"
+msgstr ""
+
+#: inc/template-functions/init.php:282 inc/template-functions/init.php:284
+msgid "views"
+msgstr ""
+
+#: inc/template-functions/init.php:337
+msgid "Edit"
+msgstr ""
+
+#: inc/template-functions/init.php:446
+msgid "Duplicate this item"
+msgstr ""
+
+#: inc/template-functions/init.php:446
+msgid "Duplicate"
+msgstr ""
+
+#: inc/template-functions/init.php:533
+msgid "<"
+msgstr ""
+
+#: inc/template-functions/init.php:534
+msgid ">"
+msgstr ""
+
+#: inc/widgets/wg-fblikebox.php:13
+msgid "Uni - Facebook Like Box"
+msgstr ""
+
+#: inc/widgets/wg-fblikebox.php:15
+msgid "Display like box fanpage Facebook"
+msgstr ""
+
+#: inc/widgets/wg-fblikebox.php:29
+msgid "en_US"
+msgstr ""
+
+#: inc/widgets/wg-fblikebox.php:39
+msgid "Like Facebook"
+msgstr ""
+
+#: inc/widgets/wg-fblikebox.php:45 inc/widgets/wg-information.php:81
+#: inc/widgets/wg-page.php:40 inc/widgets/wg-post-list.php:95
+#: inc/widgets/wg-product-slider.php:99 inc/widgets/wg-social.php:66
+#: inc/widgets/wg-support.php:68 inc/widgets/wg-view-post-list.php:105
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/wg-fblikebox.php:49
+msgid "Link Fanpage"
+msgstr ""
+
+#: inc/widgets/wg-information.php:14
+msgid "Uni - Information contact"
+msgstr ""
+
+#: inc/widgets/wg-information.php:16
+msgid "Display information contact"
+msgstr ""
+
+#: inc/widgets/wg-information.php:39 inc/widgets/wg-information.php:93
+msgid "Telephone"
+msgstr ""
+
+#: inc/widgets/wg-information.php:42 inc/widgets/wg-information.php:97
+msgid "Hotline"
+msgstr ""
+
+#: inc/widgets/wg-information.php:45 inc/widgets/wg-information.php:101
+msgid "Fax"
+msgstr ""
+
+#: inc/widgets/wg-information.php:51 inc/widgets/wg-information.php:109
+msgid "Website"
+msgstr ""
+
+#: inc/widgets/wg-information.php:85
+msgid "Company"
+msgstr ""
+
+#: inc/widgets/wg-information.php:114
+msgid "Hide label"
+msgstr ""
+
+#: inc/widgets/wg-information.php:118
+msgid "Hide icon"
+msgstr ""
+
+#: inc/widgets/wg-page.php:14
+msgid "Uni - Featured Page"
+msgstr ""
+
+#: inc/widgets/wg-page.php:16
+msgid "Display featured page"
+msgstr ""
+
+#: inc/widgets/wg-page.php:45
+msgid "Page"
+msgstr ""
+
+#: inc/widgets/wg-page.php:53 inc/widgets/wg-post-list.php:113
+#: inc/widgets/wg-view-post-list.php:121
+msgid "Show Featured Image"
+msgstr ""
+
+#: inc/widgets/wg-page.php:57 inc/widgets/wg-post-list.php:127
+#: inc/widgets/wg-product-slider.php:141 inc/widgets/wg-view-post-list.php:135
+msgid "Image Size"
+msgstr ""
+
+#: inc/widgets/wg-page.php:69 inc/widgets/wg-post-list.php:117
+#: inc/widgets/wg-product-slider.php:131 inc/widgets/wg-view-post-list.php:125
+msgid "Image Alignment"
+msgstr ""
+
+#: inc/widgets/wg-page.php:71 inc/widgets/wg-post-list.php:119
+#: inc/widgets/wg-product-slider.php:133 inc/widgets/wg-view-post-list.php:127
+msgid "None"
+msgstr ""
+
+#: inc/widgets/wg-page.php:72 inc/widgets/wg-post-list.php:120
+#: inc/widgets/wg-product-slider.php:134 inc/widgets/wg-view-post-list.php:128
+msgid "Left"
+msgstr ""
+
+#: inc/widgets/wg-page.php:73 inc/widgets/wg-post-list.php:121
+#: inc/widgets/wg-product-slider.php:135 inc/widgets/wg-view-post-list.php:129
+msgid "Right"
+msgstr ""
+
+#: inc/widgets/wg-page.php:74 inc/widgets/wg-post-list.php:122
+#: inc/widgets/wg-product-slider.php:136 inc/widgets/wg-view-post-list.php:130
+msgid "Center"
+msgstr ""
+
+#: inc/widgets/wg-page.php:82
+msgid "Show Page Title"
+msgstr ""
+
+#: inc/widgets/wg-page.php:87
+msgid "Show Page Content"
+msgstr ""
+
+#: inc/widgets/wg-page.php:91
+msgid "Content Character Limit"
+msgstr ""
+
+#: inc/widgets/wg-page.php:96
+msgid "More Text"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:14
+msgid "Uni - Featured Posts"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:16
+msgid "Displays featured posts with thumbnails"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:100 inc/widgets/wg-view-post-list.php:110
+msgid "Number of Posts to Show"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:105 inc/widgets/wg-product-slider.php:124
+msgid "Category"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:107 inc/widgets/wg-product-slider.php:126
+msgid "Select category"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:139 inc/widgets/wg-view-post-list.php:147
+msgid "Content Type"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:141 inc/widgets/wg-view-post-list.php:149
+msgid "Show Content"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:142 inc/widgets/wg-view-post-list.php:150
+msgid "Show Excerpt"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:143 inc/widgets/wg-view-post-list.php:151
+msgid "Show Content Limit"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:144 inc/widgets/wg-view-post-list.php:152
+msgid "No Content"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:149 inc/widgets/wg-view-post-list.php:157
+msgid "Limit content to"
+msgstr ""
+
+#: inc/widgets/wg-post-list.php:151 inc/widgets/wg-view-post-list.php:159
+msgid "character"
+msgstr ""
+
+#: inc/widgets/wg-product-slider.php:13
+msgid "Uni - Products Slider"
+msgstr ""
+
+#: inc/widgets/wg-product-slider.php:15
+msgid "Display slide list product"
+msgstr ""
+
+#: inc/widgets/wg-product-slider.php:104
+msgid "Select type slider"
+msgstr ""
+
+#: inc/widgets/wg-product-slider.php:106
+msgid "Vertical Slider"
+msgstr ""
+
+#: inc/widgets/wg-product-slider.php:107
+msgid "Horizontal Slider"
+msgstr ""
+
+#: inc/widgets/wg-product-slider.php:112
+msgid "Enter the product number in the view"
+msgstr ""
+
+#: inc/widgets/wg-social.php:14
+msgid "Uni - Social"
+msgstr ""
+
+#: inc/widgets/wg-social.php:16
+msgid "Display information social"
+msgstr ""
+
+#: inc/widgets/wg-social.php:69
+msgid ""
+"<p>This widget content is displayed from <strong>Theme Options -> Social</strong></p>"
+msgstr ""
+
+#: inc/widgets/wg-support.php:13
+msgid "Uni - Support"
+msgstr ""
+
+#: inc/widgets/wg-support.php:15
+msgid "Display list support for website"
+msgstr ""
+
+#: inc/widgets/wg-support.php:41
+msgid "Support Online"
+msgstr ""
+
+#: inc/widgets/wg-support.php:73 inc/widgets/wg-support.php:106
+msgid "Number supporter"
+msgstr ""
+
+#: inc/widgets/wg-support.php:79
+msgid "Appearance"
+msgstr ""
+
+#: inc/widgets/wg-support.php:83
+msgid "Layout"
+msgstr ""
+
+#: inc/widgets/wg-support.php:88
+msgid "Save change"
+msgstr ""
+
+#: inc/widgets/wg-support.php:133
+msgid "Skype"
+msgstr ""
+
+#: inc/widgets/wg-support.php:147
+msgid "Viber"
+msgstr ""
+
+#: inc/widgets/wg-view-post-list.php:14
+msgid "Uni - Top view posts"
+msgstr ""
+
+#: inc/widgets/wg-view-post-list.php:16
+msgid "Top list posts by views"
+msgstr ""
+
+#: inc/widgets/wg-view-post-list.php:68
+msgid "View more"
+msgstr ""
+
+#: inc/widgets/wg-view-post-list.php:115
+msgid "Post date"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:12
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:170
+msgid "Continue Shopping"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:226
+msgid "Information"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:227
+msgid "Gallery"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:228
+msgid "Video"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:229
+msgid "Attachments"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:263 inc/woocommerce/function-woo.php:285
+msgid "Price"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:277
+msgid "Discount"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:285
+msgid "Contact"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:326
+msgid "Choose quantity"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:339
+msgid "Add to cart"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:348
+msgid "Quick buy"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:529 inc/woocommerce/function-woo.php:557
+msgid "Close"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:596 inc/woocommerce/function-woo.php:597
+msgid "View detail"
+msgstr ""
+
+#: inc/woocommerce/function-woo.php:610
+msgid "Select your city"
+msgstr ""
+
+#: inc/woocommerce/woocommerce-grid-list-toggle.php:32
+msgid "Grid view"
+msgstr ""
+
+#: inc/woocommerce/woocommerce-grid-list-toggle.php:33
+msgid "List view"
+msgstr ""
+
+#: search.php:22
+#, php-format
+msgid "Search for keyword: %s"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:21
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:32
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some different "
+"keywords."
+msgstr ""
+
+#: template-parts/content-none.php:36
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can "
+"help."
+msgstr ""
+
+#: template-parts/content-page.php:24
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:36
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:36
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content.php:39
+msgid "Tags"
+msgstr ""
+
+#: template-parts/content.php:89
+msgid "Previous Post"
+msgstr ""
+
+#: template-parts/content.php:102
+msgid "Next Post"
+msgstr ""
+
+#: template-parts/content.php:206
+msgid "Related posts"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:48
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:114
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:118
+msgid "Return To Shop"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:25
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:57 woocommerce/checkout/thankyou.php:44
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/merchant has "
+"declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:34
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:36
+msgid "My account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:42 woocommerce/checkout/thankyou.php:86
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:49
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:54
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:60
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:66
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:72
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:25
+msgid ""
+"To track your order please enter your Order ID in the box below and press the \"Track"
+"\" button. This was given to you on your receipt and in the confirmation email you "
+"should have received."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:27
+msgid "Order ID"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:27
+msgid "Found in your order confirmation email."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:28
+msgid "Billing email"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:28
+msgid "Email you used during checkout."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:31
+msgid "Track"
+msgstr ""
+
+#: woocommerce/order/order-again.php:22
+msgid "Order again"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:31
+#: woocommerce/order/order-details.php:118
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:58
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:60
+#: woocommerce/single-product/meta.php:31
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/order/order-details.php:51
+msgid "Product"
+msgstr ""
+
+#: woocommerce/order/order-details.php:52
+msgid "Total"
+msgstr ""
+
+#: woocommerce/order/order-details.php:93
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:24
+msgid "Downloads"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:56
+msgid "&infin;"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:62
+msgid "Never"
+msgstr ""
+
+#. translators: 1: order number 2: order date 3: order status
+#: woocommerce/order/tracking.php:30
+#, php-format
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr ""
+
+#: woocommerce/order/tracking.php:41
+msgid "Order updates"
+msgstr ""
+
+#: woocommerce/order/tracking.php:47
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr ""
+
+#. translators: 1: reviews count 2: product name
+#: woocommerce/single-product-reviews.php:36
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:39 woocommerce/single-product-reviews.php:59
+#: woocommerce/single-product-reviews.php:71
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:124
+msgid "There are no reviews yet."
+msgstr ""
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:137
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:137
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:139
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:144
+msgid "Review"
+msgstr ""
+
+#. translators: %s opening and closing link tags respectively
+#: woocommerce/single-product-reviews.php:184
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:187
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:188
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:189
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:190
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:191
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:192
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:193
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:197
+msgid "Your review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:209
+msgid "Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/meta.php:31
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:37
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:39
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/product-image.php:66
+msgid "Placeholder"
+msgstr ""
+
+#: woocommerce/single-product/related.php:31
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/review-meta.php:27
+msgid "Your review is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:22
+msgid "Additional information"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:22
+msgid "Description"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Văn Nguyễn"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Page Home"
+msgstr ""

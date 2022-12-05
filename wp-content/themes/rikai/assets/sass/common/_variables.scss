@@ -1,0 +1,76 @@
+/* ------------------------------------------------------
+Common :: Variables
+------------------------------------------------------ */
+$primary-color: var(--primarycolor);
+$secondary-color: var(--secondarycolor);
+$text-color: var(--textcolor);
+$border-color: #dedede;
+$white: #FFF;
+$black: #000;
+$container-width: 1200px;
+/* Space */
+$spacer: 1rem !default;
+$enable-grid-classes: true !default;
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+$font-size-base:              1rem !default;
+/* Headline */
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        600 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$container-max-widths: (
+    xs: 100%,
+    sm: 100%,
+    md: 100%,
+    lg: 960px,
+    lx: 1110px,
+    xl: 1200px,
+    ex: 1440px,
+) !default;
+
+/* Tables */
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+$table-bg:                    transparent !default;
+$table-accent-bg:             rgba(#000, .05) !default;
+$table-hover-bg:              rgba(#000, .075) !default;
+$table-active-bg:             $table-hover-bg !default;
+$table-border-width:          1px !default;
+$table-border-color:          #dee2e6 !default;
+$table-head-bg:               #e9ecef !default;
+$table-head-color:            #495057 !default;
+$table-dark-bg:               #212529 !default;
+$table-dark-accent-bg:        rgba(#FFF, .05) !default;
+$table-dark-hover-bg:         rgba(#FFF, .075) !default;
+$table-dark-border-color:     lighten(#212529, 7.5%) !default;
+$table-dark-color:            #FFF !default;
+$table-striped-order:         odd !default;
+$table-caption-color:         #6c757d !default;
+
+/* ------------------------------------------------------
+Common :: Functions
+------------------------------------------------------ */
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+    $n: index($breakpoint-names, $name);
+    @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+    $next: breakpoint-next($name, $breakpoints);
+    @return if($next, breakpoint-min($next, $breakpoints) - .02px, null);
+}
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}

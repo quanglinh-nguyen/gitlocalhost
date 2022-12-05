@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* ------------------------------------------------------
+Common :: Variables
+------------------------------------------------------ */
+/* Space */
+/* Headline */
+/* Tables */
+/* ------------------------------------------------------
+Common :: Functions
+------------------------------------------------------ */
+/*--------------------------------------------------------------
+# Custom Css
+--------------------------------------------------------------*/
+.wtb-breadcrumb .breadcrumb-banner {
+  padding-top: 200px; }
+.wtb-breadcrumb h1.title {
+  padding-top: 40px; }
+
+.category-name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--primarycolor);
+  margin-bottom: 0; }
+
+.archive-description {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.blog-shortcode.style-3 .post-info {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FCFDFF 100%);
+  border: 1px solid rgba(0, 134, 209, 0.2);
+  box-shadow: 0px 5px 10px rgba(55, 66, 107, 0.05);
+  border-radius: 13px;
+  padding: 17px; }
+  .blog-shortcode.style-3 .post-info .post-info__thumb {
+    margin-bottom: 10px; }
+  .blog-shortcode.style-3 .post-info .post-info__meta {
+    text-align: right;
+    font-weight: 400;
+    line-height: 1.5625;
+    margin-bottom: 0px; }
+  .blog-shortcode.style-3 .post-info .post-info__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5625;
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 10px; }
+    .blog-shortcode.style-3 .post-info .post-info__title:before {
+      content: '';
+      position: absolute;
+      width: 61.84px;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background: #0086D1; }
+  .blog-shortcode.style-3 .post-info .post-info__description {
+    line-height: 1.5625; }
+
+.site-content > .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0; }
+
+.news-postview {
+  background: var(--secondarycolor);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 40px; }
+  .news-postview .slick-dotted {
+    padding-bottom: 0 !important; }
+    .news-postview .slick-dotted .slick-dots {
+      display: none !important; }
+  .news-postview .slick-arrow.slick-next {
+    right: 0px; }
+  .news-postview .slick-arrow.slick-prev {
+    left: 0px; }
+  .news-postview .slick-arrow:before {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5); }
+  @media only screen and (max-width: 576px) {
+    .news-postview .slick-dotted {
+      padding-bottom: 25px !important; }
+      .news-postview .slick-dotted .slick-dots {
+        display: block !important;
+        bottom: -5px; }
+    .news-postview .slick-arrow {
+      display: none !important; } }
+  .news-postview .news-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #FFF; }
+    .news-postview .news-info .news__icon {
+      margin-right: 19px;
+      max-width: 80px;
+      flex-basis: 80px; }
+    .news-postview .news-info .news__content {
+      max-width: calc( 100% - 99px );
+      flex-basis: calc( 100% - 99px ); }
+    .news-postview .news-info .news__meta {
+      font-weight: 600; }
+    .news-postview .news-info .news__title {
+      line-height: 1.5625;
+      font-size: 14px;
+      margin-bottom: 0; }
+      .news-postview .news-info .news__title a {
+        color: #FFF; }
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media only screen and (min-width: 850px) {
+  .blog-shortcode.style-3 .post-info .post-info__title {
+    padding-bottom: 22px; }
+  .blog-shortcode.style-3 .post-info .post-info__meta {
+    margin-bottom: 15px; } }
+@media only screen and (min-width: 992px) {
+  .category-name {
+    font-size: 40px; }
+
+  .news-postview .slick-arrow.slick-next {
+    right: -10px; }
+  .news-postview .slick-arrow.slick-prev {
+    left: -10px; }
+  .news-postview .news-info .news__title {
+    font-size: 16px; } }
+@media only screen and (min-width: 1400px) {
+  .category-name {
+    font-size: 50px; }
+
+  .news-postview .slick-arrow.slick-next {
+    right: -25px; }
+  .news-postview .slick-arrow.slick-prev {
+    left: -25px; } }
+
+/*# sourceMappingURL=category.css.map */

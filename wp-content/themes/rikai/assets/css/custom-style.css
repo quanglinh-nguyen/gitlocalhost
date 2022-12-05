@@ -1,0 +1,11 @@
+@media only screen and (min-width: 850px) {
+    #ss1 .company-info .company-inner {
+        padding: 30px !important;
+    }
+    #ss1 .company-info .text_blur {
+        font-size: 70px !important;
+    }
+    #ss2 {
+        padding-top: 330px !important;
+    }
+}

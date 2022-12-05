@@ -1,0 +1,214 @@
+/***************
+ * Pagination Css
+***************/
+#result_pagination {
+	position: relative;
+	display: block;
+	&:after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
+.pagination {
+    margin-bottom: 20px;
+	margin-top: 10px;
+	position: relative;
+	text-align: center;
+    ul.page-numbers,.pagination_post {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: inline-block;
+        padding: 0 10px;
+        margin: 0;
+        list-style: none;
+		border: 1px solid #E2E2E2;
+		border-radius: 18px;
+		overflow: hidden;
+        li {
+            list-style: none;
+            float: left;
+            padding: 0;
+            span,a {
+                display: inline-block;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                padding: 0;
+                width: 34px;
+                color: $text-color;
+                background-color: transparent;
+				position: relative;
+				&:after {
+					content: '';
+					width: 1px;
+					height: 26px;
+					position: absolute;
+					top: 4px;
+					right: 0;
+					background: #E2E2E2;
+				}
+				&.next,&.prev {
+					&:after {
+						display: none;
+					}
+				}
+                &:hover,&.current {
+                    color: $primary-color;
+                    text-decoration: none;
+					background-color: rgba($color: #0086D1, $alpha: 0.10);
+                }
+            }
+			&.active {
+				a,span {
+					color: $primary-color;
+					text-decoration: none;
+					background-color: rgba($color: #0086D1, $alpha: 0.10);
+				}
+			}
+			&:nth-child(2) {
+				a,span {
+					&:before {
+						content: '';
+						width: 1px;
+						height: 26px;
+						position: absolute;
+						top: 4px;
+						left: 0;
+						background: #E2E2E2;
+					}
+				}
+			}
+        }
+    }
+}
+.pagination {
+	.pagination_post {
+		background: #F8F9FA;
+		border-color: #E2E2E2;
+	}
+}
+
+/***************
+ * Readmore Css
+***************/
+/*CSS load*/
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+    } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+    }
+}
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+    } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+    } 
+}
+.resultLoadMore {
+	margin-bottom: 50px;
+	#ButtonLoadMore {
+		cursor: pointer;
+		position: relative;
+		border: 0px;
+	}
+	#ButtonLoadMore.loading {
+		&:before {
+			content: '';
+			background: url('assets/img/ajax-loader.gif') center no-repeat,$white;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+.loading_pagination {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
+	display: none;
+	z-index: 999;
+}
+.animation_loading {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	.sk-cube {
+		width: 33%;
+		height: 33%;
+		background-color: $primary-color;
+		float: left;
+		-webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+		animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+	}
+	.sk-cube1 {
+		-webkit-animation-delay: 0.2s;
+		animation-delay: 0.2s;
+	}
+	.sk-cube2 {
+		-webkit-animation-delay: 0.3s;
+		animation-delay: 0.3s;
+	}
+	.sk-cube3 {
+		-webkit-animation-delay: 0.4s;
+		animation-delay: 0.4s;
+	}
+	.sk-cube4 {
+		-webkit-animation-delay: 0.1s;
+		animation-delay: 0.1s;
+	}
+	.sk-cube5 {
+		-webkit-animation-delay: 0.2s;
+		animation-delay: 0.2s;
+	}
+	.sk-cube6 {
+		-webkit-animation-delay: 0.3s;
+		animation-delay: 0.3s;
+	}
+	.sk-cube7 {
+		-webkit-animation-delay: 0s;
+		animation-delay: 0s;
+	}
+	.sk-cube8 {
+		-webkit-animation-delay: 0.1s;
+		animation-delay: 0.1s;
+	}
+	.sk-cube9 {
+		-webkit-animation-delay: 0.2s;
+		animation-delay: 0.2s;
+	}
+}
+@media (max-width: 414px) {
+	.pagination_post,.pagination {
+		li {
+			margin: 0 3px;
+			span {
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+			}
+			a {
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+			}
+		}
+	}
+}

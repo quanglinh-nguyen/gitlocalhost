@@ -1,0 +1,180 @@
+/*--------------------------------------------------------------
+# Sidebar - Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 24px;
+	.sidebar & {
+		margin: 0 0 30px 0;
+		.widget-title {
+			font-size: 15px;
+            margin-bottom: 10px;
+			color: $white;
+			font-weight: 600;
+			text-transform: uppercase;
+			background: $primary-color;
+			padding: 10px 10px;
+			@media only screen and (min-width: 850px) {
+				text-align: center;
+			}
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	}
+	select {
+		max-width: 100%;
+	}
+} 
+/* Widget Recent Posts */
+
+.alignleft {display: inline;float: left;margin-right: 1.5em}
+.alignright {display: inline;float: right;margin-left: 1.5em}
+.aligncenter {clear: both;display: block;margin-left: auto;margin-right: auto}
+.widget .list-post-item {
+	li {
+		margin-bottom: 10px;
+        display: inline-block;
+        clear: both;
+        width: 100%;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.post:after {
+		clear: both;
+	}
+	.alignleft {
+		width: 100px;
+		margin-right: 10px;
+	}
+	.alignright {
+		width: 100px;
+		margin-left: 10px;
+	}
+	.aligncenter {
+		text-align: center;
+	}
+	h3 {
+		margin: 0 0 5px 0;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1.35;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		a {
+			color: inherit;
+		}
+	}
+}
+/* Widget Custom Menu */
+.widget_nav_menu {
+	ul {
+		li {
+			position: relative;
+			a {
+				font-size: 14px;
+				font-weight: normal;
+				display: block;
+				color: $text-color;
+				position: relative;
+                padding: 10px 0px;
+			}
+			&.menu-item-has-children {
+				ul {
+					display: none;
+					padding: 0 0 0 10px;
+				}
+			}
+			&.menu-item-has-children {
+				.arrow {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 39px;
+					height: 39px;
+					cursor: pointer;
+					text-align: center;
+					line-height: 39px;
+					color: $text-color;
+					background: rgba(255, 255, 255, 0.085);
+                    .footer-widgets & {
+                        color: $white;
+                        background: transparent;
+                    }
+					@include transition(all 0.25s ease 0s);
+				}
+			} 
+			&:hover,&.current-menu-item {
+				& > a {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+/* Widget Information */
+.widget_information {
+	li {
+		padding: 0px 0px 10px 22px;
+		position: relative;
+		i {
+			font-size: 13px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 14px;
+            text-align: center;
+		}
+		&.label-company {
+			padding-left: 0;
+			text-transform: uppercase;
+			i {
+				display: none;
+			}
+		}
+	}
+}
+/* Widget Social */
+.widget_social {
+	ul {
+	    margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+			    display: inline-block;
+			    color: $text-color;
+			    text-align: center;
+			    @include transition(0.3s ease-in-out);
+			    &:hover {
+			    	@include translate2d(0, -5px);
+			    }
+			}
+		}
+	}
+}
+/* Widget Tag Cloud */
+.tagcloud {
+	a {
+	    font-size: 14px !important;
+	    display: inline-block;
+	    border: 1px solid $primary-color;
+	    margin: 0 3px 5px 0;
+	    padding: 2px 5px;
+	    border-radius: 3px;
+	    color: $primary-color;
+	    &:hover {
+			background: $primary-color;
+			color: $white;
+		}
+	}
+}

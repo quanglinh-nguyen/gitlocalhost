@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200.98px) {
+
+}
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 992px) {
+    .star-average {
+        width: 100%;
+    }
+    .woocommerce-review-link {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 850px) {
+    .switcher-wrap {
+        display: none;
+    }
+    .woocommerce-order {
+        .woocommerce-order-overview {
+            border: 0;
+            margin-bottom: 0px !important;
+            margin-right: 0 !important;
+            padding: 6px 0;
+        }
+        .woocommerce-order-overview,
+        .woocommerce-order-details {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 576px) {
+    html .product-shortcode .row {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.product-shortcode .row.list-products li.product {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+    .list-products li .product-info {
+        .price {
+            ins,del {
+                display: block;
+            }
+            ins {
+                margin-right: 0;
+            }
+        }
+    }
+}

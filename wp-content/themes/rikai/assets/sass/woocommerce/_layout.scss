@@ -1,0 +1,64 @@
+/*---------------------------------------------------------------------------------------------------------
+## Woocommerce Layout 
+-----------------------------------------------------------------------------------------------------------*/
+/* columns */
+.product-shortcode.column-2 .row.list-products:not(.list) li.product,
+.product-shortcode.column-3 .row.list-products:not(.list) li.product,
+.product-shortcode.column-4 .row.list-products:not(.list) li.product,
+.product-shortcode.column-5 .row.list-products:not(.list) li.product,
+.product-shortcode.column-6 .row.list-products:not(.list) li.product {
+	-webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .product-shortcode.column-3 .row.list-products:not(.list) li.product,
+    .product-shortcode.column-4 .row.list-products:not(.list) li.product,
+	.product-shortcode.column-6 .row.list-products:not(.list) li.product {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 33.333333%;
+	    flex: 0 0 33.333333%;
+	    max-width: 33.333333%;
+	}
+    .product-shortcode.column-5 .row.list-products:not(.list) li.product {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 25%;
+	    flex: 0 0 25%;
+	    max-width: 25%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+    .product-shortcode.column-5 .row.list-products:not(.list) li.product {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
+	}
+    .product-shortcode.column-4 .row.list-products:not(.list) li.product,
+    .product-shortcode.column-6 .row.list-products:not(.list) li.product {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 25%;
+	    flex: 0 0 25%;
+	    max-width: 25%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.product-shortcode.column-6 .row.list-products:not(.list) li.product {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 16.666667%;
+	    flex: 0 0 16.666667%;
+	    max-width: 16.666667%;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	/*html .product-shortcode .row.list-products li.product {
+		-ms-flex: 0 0 100% !important;
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}*/
+}

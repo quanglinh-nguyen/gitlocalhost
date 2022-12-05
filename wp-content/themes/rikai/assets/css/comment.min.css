@@ -1,0 +1,111 @@
+#commentformPost {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 25px;
+}
+.comments-area textarea.form-control {
+    height: auto !important;
+}
+.comments-title {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.comments-title .comments-number {
+    color: #FFF;
+    background: #83bc42;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+/* .commentform-title {
+    text-transform: capitalize;
+} */
+.comments-area .comments-list {
+    list-style: none;
+    padding: 0;
+    position: relative
+}
+.comments-area .comments-list .comment {
+    margin-bottom: 15px;
+}
+.comments-area .comments-list .comment #commentform {
+    position: relative;
+    margin-top: 15px;
+}
+.comments-area .comments-list .comment .cancel-comment-reply a {
+    text-indent: -99999px;
+    width: 12px;
+    height: 12px;
+    background: url('../img/cancel.png') center no-repeat;
+    background-size: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+.comments-area .comments-list .comment .cancel-comment-reply {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 1;
+}
+.comments-area .comments-list .comment .comment-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comments-area .comments-list .comment-author {
+    max-width: 50px;
+    flex: 0 0 50px;
+    margin-right: 15px;
+}
+.comments-area .comments-list .comment-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+}
+.comments-area .comments-list .comment-content {
+    max-width: calc( 100% - 50px - 15px );
+    flex: 0 0 calc( 100% - 50px - 15px );
+    border: 1px solid #cccccc;
+    padding: 15px;
+    border-radius: 4px;
+} 
+.comments-area .comments-list .comment-meta {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.comments-area .comments-list .comment-meta a {
+    color: #333333;
+}
+.comments-area .comments-list .comment-text p {
+    margin-bottom: 10px;
+}
+.comments-area .comments-list .comment-action {
+    font-size: 10px;
+}
+.comments-area .comments-list .comment-action a {
+    padding: 3px 6px;
+    background: #d2d2d2;
+    color: #333333;
+    border-radius: 4px;
+    display: inline-block;
+}
+.comments-area .comments-list .comment-reply-link {
+    margin-right: 5px;
+}
+.comments-area .comments-list .comment-moderation {
+    font-size: 12px;
+    font-style: italic;
+}
+.comments-area .comments-list .children {
+    list-style: none;
+    padding: 0 0 0 30px;
+}

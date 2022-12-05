@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# Tài khoản
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+    .woocommerce-account {
+        .woocommerce-MyAccount-navigation {
+            width: 22%;
+        }
+        .woocommerce-MyAccount-content { 
+            width: 75%;
+        }
+    }
+}
+.u-column1.col-1.woocommerce-Address {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+}
+.woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding-left: 0;
+    border: 1px solid #ddd;
+    li {
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #e2e2e2;
+        &:last-child {
+            border-bottom: none;
+        }
+        a {
+            display: block;
+            padding: 0;
+            font-size: 14px;
+            color: #555;
+            background-color: #f8f8f8;
+            padding: 15px 10px;
+            @include transition(background-color 0.3s ease 0s);
+            &:before {
+                position: relative;
+                top: -2px;
+                content: "\F101";
+                @include fontello;
+                margin-right: 10px;
+                font-size: 10px;
+                color: $primary-color;
+            }
+        }
+        &:hover a, &.is-active a {
+            background: $white;
+        }
+        &.is-active a {
+            color: rgba(0,0,0,0.8);
+        }
+        &:not(.is-active):hover {
+            background-color: rgba(0,0,0,0.07);
+        }
+    }
+}
+.ui-datepicker {
+    width: 230px;
+    .ui-datepicker-header {
+        width: 230px;
+    }
+    table {
+        background: $white;
+        width: 230px;
+    }
+}
+#customer_login {
+	width: auto;
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-left: -30px;
+    h2 {
+	    text-transform: uppercase;
+	}
+	.woocommerce & {
+		form {
+			&.checkout_coupon, &.login, &.register {
+			    margin: 15px 0;
+			}
+		}
+	}
+	.woocommerce &, .woocommerce-page & {
+		.col-1, .col-2 {
+			position: relative;
+		    width: 100%;
+		    min-height: 1px;
+		    padding-right: 30px;
+		    padding-left: 30px;
+		    @media (min-width: 768px) {
+		    	-webkit-box-flex: 0;
+		        -ms-flex: 0 0 50%;
+		        flex: 0 0 50%;
+		        max-width: 50%;
+		    }
+		}
+	}
+	@media (min-width: 768px) {
+	    .col-2 {
+	        border-left: 1px solid #ececec;
+	    }
+	}
+}
+.woocommerce form .password-input, .woocommerce-page form .password-input {
+    flex: 0 0 100%;
+}
+.woocommerce table.my_account_orders {
+    font-size: 14px;
+}
+.woocommerce table.my_account_orders .button {
+    margin: 0 5px 5px 5px;
+}

@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import 'common/variables';
+/*--------------------------------------------------------------
+# Custom Css
+--------------------------------------------------------------*/
+.container {
+    max-width: 1090px;
+}
+.wtb-breadcrumb {
+    margin-bottom: 50px;
+    .breadcrumb-banner {
+        padding-top: 238px;
+    }
+    h1.title {
+        padding-top: 40px;
+    }
+}
+.blog-shortcode {
+    &.style-3 {
+        .post-info {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FCFDFF 100%);
+            border: 1px solid rgba(0, 134, 209, 0.2);
+            box-shadow: 0px 5px 10px rgba(55, 66, 107, 0.05);
+            border-radius: 13px;
+            padding: 17px;
+            .post-info__thumb {
+                margin-bottom: 10px;
+            }
+            .post-info__meta {
+                text-align: right;
+                font-weight: 400;
+                line-height: 1.5625;
+                margin-bottom: 15px;
+            }
+            .post-info__title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.5625;
+                position: relative;
+                padding-bottom: 22px;
+                margin-bottom: 10px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 61.84px;
+                    height: 4px;
+                    bottom: 0;
+                    left: 0;
+                    background: #0086D1;
+                }
+            }
+            .post-info__description {
+                line-height: 1.5625;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 850px) {
+    .single-post__content {
+        table {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}

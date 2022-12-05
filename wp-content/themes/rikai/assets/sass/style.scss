@@ -1,0 +1,64 @@
+/*
+Theme Name: Uni Creation
+Theme URI: 
+Author: Văn Nguyễn
+Author URI: 
+Description: 
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: shtheme
+Tags: 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Setup theme
+# Modal
+# Grid System
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+## Sidebar - Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Media
+	## Captions
+	## Galleries
+## Layout construct
+## Shortcode
+## Footer
+## Menu Mobile
+## Custom css
+## Responsive
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/reset';
+
+// @import 'components/table';
+@import 'components/pagination';
+@import 'components/form';
+@import 'components/slider';
+// @import 'components/modal';
+@import 'components/search';
+@import 'components/blog';
+@media only screen and (min-width: 992px) {
+    @import 'components/navigation';
+}
+@media only screen and (max-width: 992px) {
+    @import 'components/navigation_mobile';
+}
+@import 'themes/theme';
+@import 'themes/sidebar';
+@import 'themes/main';
