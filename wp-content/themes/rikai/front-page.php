@@ -8,11 +8,12 @@
  * @package Uni_Theme
  */
 get_header(); 
+
 wp_enqueue_style( 'home-style', UNI_DIR .'/assets/css/home.css' );
 // wp_enqueue_style( 'aos-css');
 // wp_enqueue_script( 'aos-js');
 ?>
-
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<div id="primary" class="content-sidebar-wrap">
 
 		<?php do_action( 'before_main_content' ) ?>
@@ -398,26 +399,75 @@ wp_enqueue_style( 'home-style', UNI_DIR .'/assets/css/home.css' );
 						echo '</div>';
 					echo '</div>';
 				}
+				
+
+				if( get_field('dp_ss10_linh') == true ) { 
+					$tt_ss10_linh = get_field('tt_ss10_linh');
+					$list_ss10_linh = get_field('list_ss10_linh');
+					echo '<div id="ss10" class="homepage" >';
+						echo '<div class="container">';
+							echo '<div class="wrap">';
+								echo '<h4 class="testimonials">Testimonials</h4>';
+								if($tt_ss10_linh) {
+									echo '<h2 class="heading" data-aos="fade-up"
+									data-aos-anchor-placement="top-bottom" data-aos-duration="1000"><span>'.$tt_ss10_linh.'</span></h2>';
+								}
+								echo '<div class="main-ss10 ">';
+									if($list_ss10_linh) {
+										echo '<div class="list-testimonials" data-aos="fade-up"
+										data-aos-anchor-placement="top-bottom" data-aos-duration="1000">';
+											echo '<div class="box-testimonials">';
+												foreach ($list_ss10_linh as $key => $value) {
+													echo '<div class="item-ss10">';
+														if($value['image']) {
+															echo '<div class="item-image">';
+																echo '<img src="'.$value['image'].'" />';
+															echo '</div>';
+														}
+														echo '<div class="ss10-content">';
+															if($value['decription']) {
+																echo '<div class="description">'.$value['decription'].'</div>';
+															}
+														echo '</div>';
+														echo '<div class="numberofstars">';
+														for ($i=0; $i < $value['numberofstars']; $i++) { 
+															echo '<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+															<polygon fill="#ffd700" stroke="#ffd700" stroke-width="1.01" points="10 2 12.63 7.27 18.5 8.12 14.25 12.22 15.25 18 10 15.27 4.75 18 5.75 12.22 1.5 8.12 7.37 7.27">
+															</polygon></svg>';
+														}
+														echo '</div>';
+														echo '<h4 class="testimonial-name">'.$value['fullname'].'</h4>';
+														echo '<p class="testimonial-company-name">'.$value['companyname'].'</p>';
+													echo '</div>';
+												}
+											echo '</div>';
+										echo '</div>';
+									}
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				}
 
 				if( get_field('dp_ss9_linh') == true ) { 
 					$tt_ss9_linh = get_field('tt_ss9_linh');
 					$bg_ss9_linh = get_field('bg_ss9_linh');
 					$list_ss9_linh = get_field('list_ss9_linh');
-					echo '<div id="ss8" class="homepage" style="background-image:url('.$bg_ss9_linh.')">';
+					echo '<div id="ss9" class="homepage" style="background-image:url('.$bg_ss9_linh.')">';
 						echo '<div class="container">';
 							echo '<div class="wrap">';
 								if($tt_ss9_linh) {
 									echo '<h2 class="heading" data-aos="fade-up"
 									data-aos-anchor-placement="top-bottom" data-aos-duration="1000"><span>'.$tt_ss9_linh.'</span></h2>';
 								}
-								echo '<div class="main-ss8">';
+								echo '<div class="main-ss9 ">';
 									if($list_ss9_linh) {
 										echo '<div class="list-image" data-aos="fade-up"
 										data-aos-anchor-placement="top-bottom" data-aos-duration="1000">';
 											echo '<div class="row list-row justify-content-center">';
 												foreach ($list_ss9_linh as $key => $value) {
-													echo '<div class="col-md-3 col-6 mb-5">';
-														echo '<div class="item-ss8">';
+													echo '<div class="col-md-2 col-6 mb-5">';
+														echo '<div class="item-ss9">';
 															if($value['image']) {
 																echo '<div class="item-image">';
 																	echo '<img src="'.$value['image'].'" />';
@@ -441,6 +491,10 @@ wp_enqueue_style( 'home-style', UNI_DIR .'/assets/css/home.css' );
 		<?php do_action( 'after_main_content' );?>
 
 	</div><!-- #primary -->
-        
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$('.box-testimonials').slick();
+	</script>
 <?php
 get_footer();

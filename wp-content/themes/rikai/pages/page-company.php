@@ -187,6 +187,52 @@ wp_enqueue_style( 'company-style', UNI_DIR .'/assets/css/company.css' );
 				if( get_field('dp_ss5') == true ) { 
 					echo do_shortcode('[company_profile]');
 				}
+
+				if( get_field('dp_ss6_linh') == true ) { 
+					$tt_ss6_linh = get_field('tt_ss6_linh');
+					$list_ss6_linh = get_field('list_ss6_linh');
+					echo '<div id="leadership" class="leadership">';
+						echo '<div class="container">';
+							echo '<div class="wrap">';
+					
+							if($tt_ss6_linh) {
+								echo '<h2 class="heading"><span>'.$tt_ss6_linh.'</span></h2>';
+							}
+								echo '<div class="list-map">';
+									echo '<div class="row list-row justify-content-center">';
+										foreach ($list_ss6_linh as $key => $value) {
+											echo '<div class="col-md-3 col-sm-6 mb-5">';
+												echo '<div class="item-map">';
+													echo '<div class="uk-card-default uk-card">';
+														if($value['image']) {
+															echo '<div class="item-image">';
+																echo '<span class="d-block" style="background-image:url('.$value['image'].')"></span>';
+															echo '</div>';
+														}
+														if($value['image2']) {
+															echo '<div class="item-image2">';
+																echo '<span class="d-block" style="background-image:url('.$value['image2'].')"></span>';
+															echo '</div>';
+														}
+														echo '<div class="uk-card-body">';
+														if($value['fullname']) {
+															echo '<h6 class="el-title">'.$value["fullname"].'</h6>';
+														}
+														if($value['position']) {
+															echo '<h6 class="el-meta">'.$value["position"].'</h6>';
+														}
+														echo '</div>';
+													echo '</div>';
+												echo '</div>';
+											echo '</div>';
+										}
+									echo '</div>';
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				}
+				
 			?>
 
 		</main><!-- #main -->
@@ -194,6 +240,20 @@ wp_enqueue_style( 'company-style', UNI_DIR .'/assets/css/company.css' );
 		<?php //do_action( 'after_main_content' );?>
 
 	</div><!-- #primary -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	// $(".leadership .item-map .uk-card-default").hover(function(){
+	// 	$(this).parents('.item-map').find('.item-image').hide();
+	// 	$(this).parents('.item-map').find('.item-image2').show();
+
+	// });
+	// $(".leadership .item-map .uk-card-default").mouseleave(function(){
+	// 	$(this).parents('.item-map').find('.item-image').show();
+	// 	$(this).parents('.item-map').find('.item-image2').hdie();
+	// });
+});
+</script>
 
 <?php
 get_footer();

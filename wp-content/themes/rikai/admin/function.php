@@ -108,7 +108,9 @@ class functions
         }
 
         // Footer Widget
-        $footer_widgets_number = intval( uni_option('opt-number-footer') );
+        // $footer_widgets_number = intval( uni_option('opt-number-footer') );
+        $footer_widgets_number = 3;
+
 
         $counter = 1;
         while ( $counter <= $footer_widgets_number ) {
@@ -138,9 +140,9 @@ class functions
         ) );
     }
     function uni_footer_widget_areas(){ 
-        // Footer Widget
-        $footer_widgets_number = intval( uni_option('opt-number-footer') );
-
+        // Footer Widget $footer_widgets_number = intval( uni_option('opt-number-footer') );
+        $footer_widgets_number = 3;
+        
         switch ( $footer_widgets_number ) {
             case '1':
                 $classes = 'ft-column col-md-12';

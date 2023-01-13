@@ -10,8 +10,9 @@
 
 get_header(); 
 wp_enqueue_style( 'recruitment-style', UNI_DIR .'/assets/css/recruitment.css' );
-?>
+wp_enqueue_style( 'contact-style', UNI_DIR .'/assets/css/contact.css' );
 
+?>
 	<div id="primary" class="content-sidebar-wrap">
 
 		<?php do_action( 'before_main_content' ) ?>
@@ -113,13 +114,105 @@ wp_enqueue_style( 'recruitment-style', UNI_DIR .'/assets/css/recruitment.css' );
 						echo '</div>';
 					echo '</div>';
 				}
-			?>
+				if( get_field('dp_ss6_linh') == true ) { 
+					$tt_ss6_linh = get_field('tt_ss6_linh');
+					$desc_ss6_linh = get_field('desc_ss6_linh');
+					$list_ss6_linh = get_field('list_ss6_linh');
+					echo '<section id="sec-fostered" class="career-benefit wow fadeInUp " sryle="visibility: visible; animation-name: fadeInUp;">';
+						echo '<div class="container">';
+						echo '<h2 class="section-title heading text-center">'.$tt_ss6_linh.'</h2>';
+						echo '<p class="section-desc text-center">'.$desc_ss6_linh.'</p>';
+							echo '<div class="row">';
+								if(count($list_ss6_linh) > 0){
+									foreach ($list_ss6_linh as $key => $value) {
+									echo '<div class="col-md-6 col-sm-12">';
+										echo '<div class="career-benefit-item">';
+											echo '<div class="black-box-wrapper">';
+												echo '<div class="black-box">';
+													echo '<img src="'.$value['imageicon']['url'].'" alt="nghề nghiệp, lợi ích của nhà thiết kế" data-loaded="true">';
+												echo '</div>';
+											echo '</div>';
+											echo '<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$value['description'].'</font></font></p>';
+										echo '</div>';
+									echo '</div>';
+									}
+								}
+							echo '</div>';
+						echo '</div>';
+					echo '</section>';
+				}
 
+			
+			?>
+			<?php if( get_field('dp_ss7_linh') == true ) { ?>
+				<section id="sec-contact" class="career-contact wow fadeInUp " sryle="visibility: visible; animation-name: fadeInUp;">
+				<div class="container">
+					<div class="row ">
+						<div class="col-md-7 col-sm-12 career-contact-text">
+							<h4>Nothing Here For You?</h4>
+							<p>Keep in touch and we’ll let you know when there’s a position that fits you </p>
+						</div>
+						<div class="col-md-5 col-sm-12 career-contact-button">
+							<button class="btn-send-cv btn-open-modal"><span>Send Your CV</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 492.128 492.128" style="enable-background:new 0 0 492.128 492.128;" xml:space="preserve" width='60' height='25'>
+								<path fill='#0086d1' id="XMLID_79_" d="M490.061,241.075L334.164,85.179c-2.017-2.018-5.046-2.614-7.686-1.528
+									c-2.631,1.097-4.348,3.661-4.348,6.515v75.376H17.42c-9.619,0-17.42,7.802-17.42,17.421v126.202c0,9.619,7.802,17.421,17.42,17.421
+									h304.709v75.377c0,2.854,1.717,5.419,4.348,6.515c2.64,1.087,5.669,0.489,7.686-1.527l155.897-155.898
+									C492.817,248.296,492.817,243.833,490.061,241.075z M79.675,286.432c-22.293,0-40.369-18.076-40.369-40.368
+									s18.076-40.369,40.369-40.369c22.292,0,40.369,18.077,40.369,40.369S101.968,286.432,79.675,286.432z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				</section>
+
+			<?php } ?>
+			
+			
+
+<div class="modal-custom">
+<div class="modal-content">
+    <span class="close">&times;</span>
+		<div class="form-recruitment">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="form-wrap">
+						<?php echo do_shortcode('[contact-form-7 id="700" title="Recruitment"]'); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
+			
 		</main><!-- #main -->
 		
 		<?php //do_action( 'after_main_content' );?>
 
 	</div><!-- #primary -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+	var modal = $('.modal-custom');
+  var btn = $('.btn-open-modal');
+  var span = $('.close');
+
+  btn.click(function () {
+    modal.show();
+  });
+
+  span.click(function () {
+    modal.hide();
+  });
+
+  $(window).on('click', function (e) {
+    if ($(e.target).is('.modal-custom')) {
+      modal.hide();
+    }
+  });
+</script>
 <?php
 get_footer();

@@ -31,9 +31,16 @@ class Uni_Social_Widget extends WP_Widget {
                     if( get_field('social_facebook','option') ) {
                         echo '<li class="icon_social icon_facebook"><a title="Facebook" href="'. get_field('social_facebook','option') .'" rel="nofollow" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/img/icon/ic-facebook.svg" alt="Facebook"></a></li>';
                     }
-                    if( get_field('social_youtube','option') ) {
-                        echo '<li class="icon_social icon_youtube"><a title="youtube" href="'. get_field('social_youtube','option') .'" rel="nofollow" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/img/icon/ic-youtube.svg" alt="youtube"></a></li>';
+                    
+                    // if( get_field('social_linkedin','option') ) {
+                    //     echo '<li class="icon_social icon_linkedin"><a title="linkedin" href="'. get_field('social_linkedin','option') .'" rel="nofollow" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/img/icon/ic-linkedin.svg" alt="linkedin"></a></li>';
+                    // }
+                    if( get_field('social_facebook','option') ) {
+                        echo '<li class="icon_social icon_linkedin"><a title="linkedin" href="'. get_field('social_linkedin','option') .'" rel="nofollow" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/img/icon/ic-linkedin.svg" alt="linkedin"></a></li>';
                     }
+                    // if( get_field('social_youtube','option') ) {
+                    //     echo '<li class="icon_social icon_youtube"><a title="youtube" href="'. get_field('social_youtube','option') .'" rel="nofollow" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/img/icon/ic-youtube.svg" alt="youtube"></a></li>';
+                    // }
                     // if( get_field('social_messenger','option') ) {
                     //     echo '<li class="icon_social icon_messenger"><a title="Messenger" href="'. get_field('social_messenger','option') .'" rel="nofollow" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/img/ic-messenger.svg" alt="Messenger"></a></li>';
                     // }

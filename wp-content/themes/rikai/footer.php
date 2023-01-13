@@ -49,5 +49,46 @@
     <?php do_action( 'after_footer' );?>
 </div><!-- #page -->
 <?php wp_footer(); ?>
+<style>
+
+	.main-footer, .main-footer .widget_information {
+		color: var(--textcolor) !important;
+	}
+	.main-footer .widget_social ul {
+		text-align: left !important;
+	}
+
+	.main-footer .menu-primary-menu-container,
+	.main-footer .ft-column:nth-child(2) h3.widget-title{
+		padding-left: 60px;
+	}
+	.main-footer #menu-primary-menu{
+		flex-direction: column !important;
+	}
+
+	.widget_nav_menu ul li a{
+
+	}
+
+	.main-footer .widget_nav_menu ul li.menu-item-has-children .arrow{
+		top: 12px;
+		left: 67px;
+	}
+
+	.main-footer .widget-title{
+		color: var(--primarycolor);
+	}
+
+
+	.main-footer .widget_information,.main-footer .custom-html-widget{
+		color: #000;
+		font-size: 16px;
+    	font-weight: normal;
+	}
+
+	.main-footer .widget_nav_menu ul li a, .widget_information li i {
+		font-size: 16px;
+	}
+</style>
 </body>
 </html>

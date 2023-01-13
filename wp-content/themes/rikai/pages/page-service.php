@@ -230,13 +230,100 @@ wp_enqueue_style( 'service-style', UNI_DIR .'/assets/css/service.css' );
 						echo '</div>';
 					echo '</div>';
 				}
+
+				if( get_field('dp_ss5') == true ) {
+					$title_ss5 = get_field('title_ss5');
+					$permalink_ss4 = get_field('permalink_ss4');
+					$background_ss4 = get_field('background_ss4');
+					echo '<div id="ss5-service" class="service fadeInUp  " style="background: rgba(0, 134, 209, 0.1); visibility: visible; animation-name: fadeInUp;">';
+						echo '<div class="section-cta__bg" >';
+						echo '</div>';
+						echo '<div class="bg-overlay"></div>';
+						echo '<div class="container">';
+							if($title_ss5) {
+								echo '<div class="cpf-title5">'.$title_ss5.'</div>';
+							}
+							echo '<div class="wow fadeInUp  effect">';
+								echo '<a href="https://rikai-mind.technology/contact-us/" class="btn btn-custom-link">Contact Us </a>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				}
 			?>
+
+
 
 		</main><!-- #main -->
 		
 		<?php //do_action( 'after_main_content' );?>
 
 	</div><!-- #primary -->
+<style>
+	#ss5-service {
+		position: relative;
+		padding-top: 140px;
+    	padding-bottom: 140px;
+	}
 
+	.section-cta__bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -2;
+		background-image: url(https://rikai-mind.technology/wp-content/uploads/2022/05/bg-recruitment-1.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.bg-overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.4;
+		z-index: -1;
+	}
+	.cpf-title5{
+		margin-bottom: 50px;
+		font-size: 60px;
+		font-weight: 500;
+		line-height: 1.17;
+		color: #51b4eb;
+	}
+
+	.btn-custom-link{
+		transition: all 0.3s ease;
+		background-image: linear-gradient(to right,#82fefe 0%,#4eafe6 51%,#82fefe 100%);
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #101e76;
+		background-size: 200% auto;
+		border-radius: 0;
+		padding: 13px 45px;
+		display: inline-block;
+	}
+
+	@media only screen and (max-width: 850px) {
+		#ss5-service {
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+
+		.cpf-title5{
+			margin-bottom: 40px;
+			font-size: 45px;
+		}
+
+		.btn-custom-link{
+			font-size: 18px;
+			padding: 11px 38px;
+		}
+	}
+</style>
 <?php
 get_footer();

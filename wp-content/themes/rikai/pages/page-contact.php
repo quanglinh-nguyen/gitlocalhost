@@ -12,6 +12,10 @@ get_header();
 wp_enqueue_style( 'contact-style', UNI_DIR .'/assets/css/contact.css' );
 $list = get_field('list',get_the_ID());
 $form = get_field('form',get_the_ID());
+// echo '<pre>';
+// print_r($list);
+// print_r($form);
+// echo '</pre>';
 ?>
 
 	<div id="primary" class="content-sidebar-wrap">

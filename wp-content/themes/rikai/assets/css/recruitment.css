@@ -344,3 +344,178 @@ Common :: Functions
     padding: 91px 15.444444vw 87px 12.083333vw; } }
 
 /*# sourceMappingURL=recruitment.css.map */
+
+
+
+
+.career-benefit {
+padding: 100px 0 80px;
+}
+.career-benefit .section-title {
+margin-bottom: 10px;
+}
+
+.career-benefit .section-desc{
+  color: var(--textcolor);
+  margin-bottom: 40px;
+}
+.career-benefit-item {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+margin-bottom: 24px;
+}
+.black-box {
+width: 100px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 2px 4px 15px rgb(8 37 133 / 15%);
+border-radius: 5px;
+}
+.career-benefit-item p {
+margin-bottom: 0;
+padding-left: 16px;
+line-height: 28px;
+}
+
+.career-contact{
+  background-color: #8dacdf;
+  padding: 50px 0 80px;
+}
+
+.career-contact-text h4{
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.career-contact-text p{
+  color: #FFFFFF99;
+}
+
+.career-contact-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-contact-button .btn-send-cv{
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: none;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: var(--primarycolor);
+  border-radius: 4px;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 0px;background-color: #fff;
+  padding: 11px 33px 11px 33px;
+  position: relative;
+  border: 2px solid var(--primarycolor);;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-custom {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .4);
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal-custom  .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 70%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .modal-custom  .modal-content {
+
+  max-width: 90%;
+} }
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+.modal-custom .form-recruitment .form-wrap {
+  margin-top: 30px;
+  padding: 35px 25px 35px 25px;
+  position: relative; }
+  .modal-custom .form-recruitment .form-wrap .row-small {
+    margin-left: -7.5px;
+    margin-right: -7.5px; }
+    .modal-custom .form-recruitment .form-wrap .row-small .col-md-6 {
+      padding-left: 7.5px;
+      padding-right: 7.5px; }
+  .modal-custom .form-recruitment .form-wrap .wpcf7-spinner {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%); }
+  .modal-custom .form-recruitment .form-wrap .btn {
+    border-radius: 50px;
+    margin: 0 10px; }
+  .modal-custom .form-recruitment .form-wrap .btn-reset {
+    border: 1px solid #222222;
+    background: none;
+    color: #222222;
+    font-weight: 600; }
+  .modal-custom .form-recruitment .form-wrap .btn-submit {
+    border: 0;
+    font-weight: 600;
+    background: var(--primarycolor); }
+  .modal-custom .form-recruitment .form-wrap h3 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .modal-custom .form-recruitment .form-wrap textarea {
+    height: 120px; }
+  .modal-custom .form-recruitment .form-wrap .wpcf7 label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.4em; }
+  .modal-custom .form-recruitment .form-wrap .button-cv {
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #EBEBEB;
+    padding: 10px 10px;
+    line-height: 20px;
+    margin-bottom: 1em;
+    cursor: pointer; }
+  .modal-custom .form-recruitment .form-wrap .button-cv i {
+    margin-right: 1em; }
+ 

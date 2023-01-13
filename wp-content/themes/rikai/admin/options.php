@@ -2011,6 +2011,25 @@ class options
                         'append' => '',
                         'maxlength' => '',
                     ),
+                    array(
+                        'key' => 'contact_17',
+                        'label' => esc_html__( 'Linkedin', 'shtheme' ),
+                        'name' => 'social_linkedin',
+                        'type' => 'text',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'maxlength' => '',
+                    ),
                 ),
                 'location' => array(
                     array(

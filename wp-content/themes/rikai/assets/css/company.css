@@ -337,6 +337,110 @@ Common :: Functions
     background-repeat: no-repeat;
     background-position: center center; }
 
+
+
+    
+    #leadership {
+	background: #edf1fb;
+	 padding-top: 50px;
+	 padding-bottom: 20px;
+}
+ #leadership .heading {
+	 margin-bottom: 27px;
+}
+ #leadership .uk-grid {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+
+ #leadership .item-map .uk-card-default {
+    border-radius: 10px 10px 0 0;
+	 width: 100%;
+	 line-height: 1.5;
+	 background-color: #fff;
+	 color: #666;
+}
+ #leadership .item-map .uk-card {
+	 position: relative;
+	 transition: 0.1s ease-in-out;
+	 transition-property: color, background-color, background-size, border-color, box-shadow, transform, top;
+	 border-radius: 10px;
+}
+ #leadership .item-map p {
+	 margin-bottom: 0;
+}
+ #leadership .item-map h3 {
+	 font-size: 16px;
+	 margin-bottom: 3px;
+}
+
+
+.item-map .item-image2 {
+	 display: none;
+}
+.leadership .item-map .uk-card-default:hover .item-image2{
+  display: block;
+  transition-delay: 0.5s;
+}
+
+.leadership .item-map .uk-card-default:hover .item-image{
+  display: none;
+  transition-delay: 0.5s;
+}
+
+.item-map .uk-card-body{
+  padding: 12px 25px 15px 25px;
+  text-align: center!important; 
+}
+.uk-card-body .el-title{
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.uk-card-body .el-meta{
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5b6175;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 0 15px 0;
+}
+
+ #leadership .item-map .item-image span, #leadership .item-map .item-image2 span {
+	 padding-top: 66.0245184%;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center center;
+   border-radius: 10px 10px 0px 0px;
+   /* -webkit-animation-name: test-animation;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out; 
+transition: opacity 0.2s, visibility 0.2s; */
+   transition: visibility 0s, opacity 0.5s linear;
+}
+#leadership .container{
+  padding: 0px 100px;
+} 
+
+@-webkit-keyframes test-animation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+ 
 /*--------------------------------------------------------------
 # Responsive
 --------------------------------------------------------------*/
@@ -346,12 +450,17 @@ Common :: Functions
   #ss1 .company-info .text_blur {
     font-size: 60px;
     bottom: 30px; }
+  #leadership .container{
+  padding: 0px 40px;
+} 
   #ss1 .company-info .company-info__list .company-info__block .company-info__description {
     font-size: 13px; } }
 @media only screen and (min-width: 850px) {
   .wtb-breadcrumb .breadcrumb-banner {
     padding-top: 450px; }
-
+    #leadership .container{
+  padding: 0px 60px;
+} 
   #history .history-block {
     padding-top: 320px;
     padding-bottom: 360px;
@@ -412,7 +521,10 @@ Common :: Functions
     padding-bottom: 20px; } }
 @media only screen and (min-width: 992px) {
   .wtb-breadcrumb .breadcrumb-banner {
-    padding-top: 500px; } }
+    padding-top: 500px; }
+  #leadership .container{
+  padding: 0px 60px;
+}  }
 @media only screen and (min-width: 1200px) {
   .wtb-breadcrumb .breadcrumb-banner {
     padding-top: 574px; }
@@ -459,6 +571,9 @@ Common :: Functions
 @media only screen and (min-width: 1400px) {
   #history .history-box .history-item .history-process h4 {
     font-size: 20px; }
+    #leadership .container{
+  padding: 0px 100px;
+} 
   #history .history-box .history-item .history-process p {
     font-size: 14px; } }
 
